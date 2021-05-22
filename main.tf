@@ -15,7 +15,7 @@ provider "google" {
   zone    = var.zone
 }
 
-module "tf_instance" {
+module "tf_instances" {
   source          = "./modules/instances/"
   names           = var.tf_instances
   zone            = var.zone
