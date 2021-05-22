@@ -16,5 +16,4 @@ variable "zone" {
 
 variable tf_instances {
   type    = list(string)
-  default = ["tf-instance-1", "tf-instance-1"]
 }

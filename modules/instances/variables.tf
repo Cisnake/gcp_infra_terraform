@@ -6,11 +6,10 @@ variable machine_type {
   default = "f1-micro"
 }
 
-variable zones {
+variable zone {
 }
 
 variable image {
-  default = "ubuntu-os-cloud/ubuntu-1604-lts"
 }
 
 variable network {

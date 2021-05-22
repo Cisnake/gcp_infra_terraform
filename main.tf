@@ -14,3 +14,12 @@ provider "google" {
   region  = var.region
   zone    = var.zone
 }
+
+module "tf_instance" {
+  source          = "./modules/instances/"
+  names           = var.tf_instances
+  zone            = var.zone
+  machine_type    = var.machine_type
+  image           = var.image
+  startup_script  = var.startup_script
+}
