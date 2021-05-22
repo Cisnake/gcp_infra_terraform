@@ -17,3 +17,15 @@ variable "zone" {
 variable tf_instances {
   type    = list(string)
 }
+
+variable machine_type {
+  default = ""
+}
+
+variable image {
+  default = ""
+}
+
+variable startup_script {
+  default = ""
+}
